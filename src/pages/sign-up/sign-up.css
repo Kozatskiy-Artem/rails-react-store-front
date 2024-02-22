@@ -1,0 +1,28 @@
+.authForm {
+  text-align: center;
+  background: white;
+  padding: 100px 75px;
+  width: 700px;
+  margin: auto;
+}
+.authForm__text {
+  font-size: 25px;
+  color: #003052;
+  margin-bottom: 40px;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  width: 80%;
+  color: white;
+  background-color: #003052;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 40px auto;
+}

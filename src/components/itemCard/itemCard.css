@@ -1,0 +1,43 @@
+.item-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.item-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item-name {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.item-price {
+  margin-top: 4px;
+  font-size: 20px;
+}
+
+.order-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.order-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.order-button:hover {
+  background-color: #0056b3;
+}

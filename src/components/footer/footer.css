@@ -1,0 +1,13 @@
+footer {
+  background-color: #003052;
+  width: auto;
+  padding: 20px;
+  padding-bottom: 5px;
+  margin: 0;
+  color: #fcfcfc;
+}
+footer a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-size: 18px;
+}
