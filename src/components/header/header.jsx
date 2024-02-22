@@ -10,6 +10,7 @@ function Header() {
       <div>
         <NavLink to="/sign-up">Зареєструватись</NavLink>
         <NavLink to="/login">Увійти</NavLink>
+        <NavLink to="/cabinet">Кабінет</NavLink>
       </div>
     </header>
   );

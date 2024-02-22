@@ -16,13 +16,10 @@
   flex-direction: column;
 }
 .button {
-  width: 80%;
-  color: white;
-  background-color: #003052;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
   border: none;
-  border-radius: 15px;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 40px auto;
+  border-radius: 4px;
+  cursor: pointer;
 }

@@ -7,7 +7,11 @@ function Login() {
     <div className="authForm">
       <p className="authForm__text">Увійти</p>
       <form className="content">
-        <CustomInput label={"E-mail"} placeholder={"email@gmail.com"} />
+        <CustomInput
+          label={"E-mail"}
+          placeholder={"email@gmail.com"}
+          type="email"
+        />
         <CustomInput type="password" label={"Пароль"} placeholder={"Пароль"} />
         <button className="button" type="submit">
           Увійти

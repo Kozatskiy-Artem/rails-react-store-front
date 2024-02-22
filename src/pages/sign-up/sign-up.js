@@ -7,7 +7,7 @@ function SignUp() {
     <div className="authForm">
       <p className="authForm__text">Зареєструватись</p>
       <form className="content">
-        <CustomInput label={"E-mail"} placeholder={"email@gmail.com"} />
+        <CustomInput label={"E-mail"} placeholder={"email@gmail.com"} type="email"/>
         <CustomInput type="password" label={"Пароль"} placeholder={"Пароль"} />
         <CustomInput
           type="password"
