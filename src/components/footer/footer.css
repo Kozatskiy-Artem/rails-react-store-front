@@ -1,10 +1,12 @@
 footer {
   background-color: #003052;
-  width: auto;
+  width: 100%;
   padding: 20px;
   padding-bottom: 5px;
   margin: 0;
   color: #fcfcfc;
+  position: fixed;
+  bottom: 0;
 }
 footer a {
   color: #fcfcfc;

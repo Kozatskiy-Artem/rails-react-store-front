@@ -2,7 +2,7 @@ import React from "react";
 import "./itemCard.css";
 import { NavLink } from "react-router-dom";
 
-export default function ItemCard({ name, price, id }) {
+const ItemCard = ({ id, name, price }) => {
   return (
     <div className="item-card">
       <img
@@ -12,10 +12,11 @@ export default function ItemCard({ name, price, id }) {
       />
       <h3 className="item-name">{name}</h3>
       <p className="item-price">${price}</p>
-      <button className="order-button">
-        {" "}
-        <NavLink to={`/`}>Замовити</NavLink>
-      </button>
+      <NavLink to={`item/${id}`} className="order-button">
+        Переглянути
+      </NavLink>
     </div>
   );
-}
+};
+
+export default ItemCard;

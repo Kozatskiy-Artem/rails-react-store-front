@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import api from '../../api';
+import api from "../../api";
 import CustomInput from "../../components/customInput/customInput";
 import "./sign-up.css";
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const navigate = useNavigate ();
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -30,7 +30,7 @@ function SignUp() {
 
   return (
     <div className="authForm">
-      <p className="authForm__text">Зареєструватись</p>
+      <h2>Зареєструватись</h2>
       <form className="content" onSubmit={handleSubmit}>
         <CustomInput
           label={"E-mail"}

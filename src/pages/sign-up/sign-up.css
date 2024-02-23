@@ -5,11 +5,6 @@
   width: 700px;
   margin: auto;
 }
-.authForm__text {
-  font-size: 25px;
-  color: #003052;
-  margin-bottom: 40px;
-}
 .content {
   width: 100%;
   display: flex;
@@ -25,4 +20,7 @@
   font-size: 18px;
   font-weight: 700;
   margin: 40px auto;
+}
+.button:hover {
+  background-color: #0056b3;
 }

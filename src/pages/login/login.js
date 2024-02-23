@@ -29,7 +29,7 @@ function Login() {
   };
   return (
     <div className="authForm">
-      <p className="authForm__text">Увійти</p>
+      <h2>Увійти</h2>
       <form className="content" onSubmit={handleSubmit}>
       <CustomInput
           label={"E-mail"}

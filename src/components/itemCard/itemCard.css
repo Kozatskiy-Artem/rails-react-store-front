@@ -1,41 +1,43 @@
 .item-card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
   width: 250px;
+  margin: 10px auto;
+}
+
+.item-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .item-image {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
 }
 
 .item-name {
-  margin-top: 8px;
   font-size: 18px;
+  margin: 10px 0;
 }
 
 .item-price {
-  margin-top: 4px;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .order-button {
   display: block;
   width: 100%;
+  background-color: #003052;
+  color: #fff;
+  text-align: center;
   padding: 10px;
-  margin-top: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.order-button a {
   text-decoration: none;
-  color: #fff;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.3s ease;
 }
 
 .order-button:hover {
