@@ -7,14 +7,22 @@ import SignUpPage from "./pages/sign-up/sign-up";
 import CabinetPage from './pages/cabinet-page/cabinet-page';
 
 function App() {
+  const accessToken = localStorage.getItem("accessToken");
+
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/sign-up" element={<SignUpPage />} />
-          <Route path='/cabinet' element={<CabinetPage />} />
+          {!accessToken && (
+          <>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/sign-up" element={<SignUpPage />} />
+          </>
+          )}
+          {accessToken && (
+            <Route path='/cabinet' element={<CabinetPage />} />
+          )}
         </Route>
       </Routes>
     </div>

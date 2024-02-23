@@ -1,6 +1,7 @@
+import React from "react";
 import "./customInput.css";
 
-const CustomInput = ({ label, placeholder, type, defaultValue }) => {
+const CustomInput = ({ label, placeholder, type, value, onChange }) => {
   return (
     <label className="label">
       {label && <span className="inputLabel">{label}</span>}
@@ -8,7 +9,8 @@ const CustomInput = ({ label, placeholder, type, defaultValue }) => {
         className="input"
         type={type}
         placeholder={placeholder}
-        defaultValue={defaultValue}
+        value={value}
+        onChange={onChange}
       />
     </label>
   );
