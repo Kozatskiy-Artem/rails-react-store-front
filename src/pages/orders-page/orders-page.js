@@ -8,7 +8,7 @@ const OrdersPage = () => {
   const accessToken = localStorage.getItem("accessToken");
 
   useEffect(() => {
-    const fetchItems = async () => {
+    const fetchOrders = async () => {
       try {
         const response = await api.get("/orders/", {
           headers: {
@@ -21,7 +21,7 @@ const OrdersPage = () => {
       }
     };
 
-    fetchItems();
+    fetchOrders();
   }, [accessToken]);
 
 

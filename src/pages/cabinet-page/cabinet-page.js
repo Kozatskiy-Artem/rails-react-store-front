@@ -22,6 +22,8 @@ const CabinetPage = () => {
           }
         );
         setMe(response.data);
+        setFirst_name(response.data.first_name);
+        setLast_name(response.data.last_name);
       } catch (error) {
         console.error("Error fetching Me:", error);
       }
@@ -46,6 +48,7 @@ const CabinetPage = () => {
         },
       });
       setEditing(false);
+      window.location.reload();
     } catch (error) {
       console.error(error);
     }

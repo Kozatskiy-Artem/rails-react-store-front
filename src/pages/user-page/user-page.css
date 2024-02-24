@@ -1,0 +1,45 @@
+.user-page {
+  width: 60%;
+  margin: auto;
+}
+
+.user-page label {
+  display: block;
+  margin-top: 10px;
+}
+
+.user-page input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.user-page .role-select {
+  margin-bottom: 10px;
+}
+
+.user-page select {
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.user-page button {
+  width: 80%;
+  color: white;
+  background-color: #003052;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.user-page button:hover {
+  background-color: #0056b3;
+}

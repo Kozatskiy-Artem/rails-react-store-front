@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   const accessToken = localStorage.getItem("accessToken");
-
+  const role = localStorage.getItem("role");
   return (
     <header>
       <h1>TechStore</h1>
@@ -21,6 +21,9 @@ function Header() {
           <>
           <NavLink to="/cabinet">Кабінет</NavLink>
           <NavLink to="/orders">Замовлення</NavLink>
+          {role === "admin" && (
+          <NavLink to="/users">Користувачі</NavLink>
+          )}
           </>
         )}
       </div>

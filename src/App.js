@@ -9,9 +9,12 @@ import ItemPage from "./pages/item-page/item-page";
 import CartPage from "./pages/cart-page/cart-page";
 import OrdersPage from "./pages/orders-page/orders-page";
 import OrderPage from "./pages/order-page/order-page";
+import UsersPage from './pages/users-page/users-page';
+import UserPage from './pages/user-page/user-page';
 
 function App() {
   const accessToken = localStorage.getItem("accessToken");
+  const role = localStorage.getItem("role");
 
   return (
     <div className="App">
@@ -25,12 +28,20 @@ function App() {
           </>
           )}
           {accessToken && (
+            <>
             <Route path='/cabinet' element={<CabinetPage />} />
+            <Route path="/orders" element={<OrdersPage />} />
+            <Route path="/orders/order/:orderId" element={<OrderPage />} />
+            {role === "admin" && (
+              <>
+              <Route path="/users" element={<UsersPage />} />
+              <Route path="/users/:userId" element={<UserPage />} />
+              </>
+            )}
+            </>
           )}
           <Route path="/item/:itemId" element={<ItemPage />} />
           <Route path="/cart" element={<CartPage />} />
-          <Route path="/orders" element={<OrdersPage />} />
-          <Route path="/orders/order/:orderId" element={<OrderPage />} />
         </Route>
       </Routes>
     </div>
