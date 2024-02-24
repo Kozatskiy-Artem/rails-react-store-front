@@ -9,6 +9,7 @@ function Header() {
     <header>
       <h1>TechStore</h1>
       <NavLink to="/">Каталог товарів</NavLink>
+      <NavLink to="/cart">Кошик</NavLink>
       <div>
         {!accessToken && (
         <>
@@ -17,7 +18,10 @@ function Header() {
         </> 
         )}
         {accessToken && (
+          <>
           <NavLink to="/cabinet">Кабінет</NavLink>
+          <NavLink to="/orders">Замовлення</NavLink>
+          </>
         )}
       </div>
     </header>

@@ -1,0 +1,29 @@
+.cart-item {
+  width: 60%;
+  margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cart-item h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .cart-item p {
+    margin: 5px 0;
+  }
+.delete-btn {
+  color: white;
+  background-color: #003052;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}

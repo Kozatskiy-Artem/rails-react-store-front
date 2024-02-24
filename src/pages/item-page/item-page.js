@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./item-page.css";
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import api from "../../api";
 
 function ItemPage() {
   let { itemId } = useParams();
   const [item, setItem] = useState({}); 
   const [quantity, setQuantity] = useState(1);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchItem = async () => {
       try {
@@ -35,6 +35,7 @@ function ItemPage() {
     const items = JSON.parse(localStorage.getItem("cartItems")) || [];
     items.push(newItem);
     localStorage.setItem("cartItems", JSON.stringify(items));
+    navigate('/cart')
   };
 
   return (

@@ -1,0 +1,20 @@
+.order-item {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.order-item p {
+  margin: 5px 0;
+}

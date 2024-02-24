@@ -6,6 +6,9 @@ import LoginPage from "./pages/login/login";
 import SignUpPage from "./pages/sign-up/sign-up";
 import CabinetPage from './pages/cabinet-page/cabinet-page';
 import ItemPage from "./pages/item-page/item-page";
+import CartPage from "./pages/cart-page/cart-page";
+import OrdersPage from "./pages/orders-page/orders-page";
+import OrderPage from "./pages/order-page/order-page";
 
 function App() {
   const accessToken = localStorage.getItem("accessToken");
@@ -25,6 +28,9 @@ function App() {
             <Route path='/cabinet' element={<CabinetPage />} />
           )}
           <Route path="/item/:itemId" element={<ItemPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/orders" element={<OrdersPage />} />
+          <Route path="/orders/order/:orderId" element={<OrderPage />} />
         </Route>
       </Routes>
     </div>
