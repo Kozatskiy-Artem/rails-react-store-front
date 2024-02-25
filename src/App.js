@@ -11,6 +11,7 @@ import OrdersPage from "./pages/orders-page/orders-page";
 import OrderPage from "./pages/order-page/order-page";
 import UsersPage from './pages/users-page/users-page';
 import UserPage from './pages/user-page/user-page';
+import ErrorPage from './pages/error-page/error-page';
 
 function App() {
   const accessToken = localStorage.getItem("accessToken");
@@ -42,6 +43,7 @@ function App() {
           )}
           <Route path="/item/:itemId" element={<ItemPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path='*' element={<ErrorPage />} />
         </Route>
       </Routes>
     </div>

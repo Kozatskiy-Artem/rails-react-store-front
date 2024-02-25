@@ -19,7 +19,6 @@ function Login() {
       });
       if (response) {
         localStorage.setItem("accessToken", response.data.token);
-        localStorage.setItem("refreshToken", response.data.refresh_token)
         localStorage.setItem("role", response.data.role)
       }
       navigate("/");
