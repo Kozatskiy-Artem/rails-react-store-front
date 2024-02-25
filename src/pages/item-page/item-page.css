@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 75px;
+  padding: 50px 75px;
   width: 900px;
   margin: auto;
 }
@@ -55,4 +55,39 @@ input {
 
 .add-to-cart-btn:hover {
   background-color: #0056b3;
+}
+.buttons {
+  margin-top: 20px;
+}
+.edit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #003052;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.editing-item {
+  width: 70%;
+  margin: 40px auto;
+}
+.editing-item button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #003052;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #6c061c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
