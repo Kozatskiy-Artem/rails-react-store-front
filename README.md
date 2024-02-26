@@ -1,70 +1,61 @@
-# Online store on React
+# Online strore (Ruby on Rails + React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an online store that utilizes Ruby on Rails to create an API and React for the frontend. 
 
-## Available Scripts
+It allows users to register, login, and logout, edit their own information, search for products, view, add to cart, 
+create and review their orders.
 
-In the project directory, you can run:
+Additionally, it features an administrator role, granting privileges to add, edit, and delete products, 
+view all users, edit their information, and delete them as well.
 
-### `npm start`
+Backend repository: https://github.com/Kozatskiy-Artem/rails-react-store-api
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Clone the repository:
+```
+git clone https://github.com/Kozatskiy-Artem/rails-react-store-front.git
+```
+OR
+```
+git clone git@github.com:Kozatskiy-Artem/rails-react-store-front.git
+```
 
-### `npm test`
+### Install dependencies:
+Ensure you have Node.js installed. Then run:
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Running the Server
+To start the React server use the following command:
+```
+npm run server
+```
 
-### `npm run build`
+Open your web browser and navigate to http://localhost:3000/
+Or if the backend server is already running on port 3000, navigate to http://localhost:3001/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Start with Docker
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run
+Make sure you have Docker installed on your system.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build Docker image:
+```
+docker build . -t react-image
+```
 
-### `npm run eject`
+Run container:
+```
+docker run -p 3001:3000 -d react-image
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Open your web browser and navigate to http://localhost:3001/.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Shutdown
+```
+docker stop
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### © Project Author: Artem Kozatskyi
